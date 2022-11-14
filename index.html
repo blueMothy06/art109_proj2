@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="sketch.js"></script>
+  <link href="./style.css" rel="stylesheet" type="text/css" />
+  <link href="./_assets/css/examples.css" rel="stylesheet" type="text/css" />
+  <script src="../_assets/js/examples.js"></script>
+  <script src="./lib/easeljs-NEXT.js"></script>
+
+  <!-- <script src="p5.js"></script> -->
+  <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+  <!-- <script src="p5.min.js"></script> -->
+  <script src="drag_and_drop.js"></script>
+  <!-- <script src="p5.clickable.js"></script> -->
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body onload="init();">
+
+  <p id="story">
+    <span>
+      Where are my airpods???
+    </span>
+</p>
+
+    <script>
+      let counter = 0;
+      let narration = new Array("a", "There comes a dark time in everyone's life.",
+        "c", "You know those moments. Ones you won't even admit to just anyone.",
+        "d", "You didn’t really want to do it.",
+        "e", "You see, there’s other ways of getting what you want.",
+        "f", "It may or may not involve getting out of the house and asking other people, but who really has the time for that these days?",
+        "ff", "It doesn’t matter why you need to know how to make a DIY ceiling plant holder, just that you need it now and very soon.",
+        "g", "So this has left you with no choice.",
+        "h", "It is time for <b>THAT</b> thing.",
+        "i", "Presenting…MOM’S OLD COMPUTER",
+        "j", "(It’s been rotting in the attic since forever)",
+        "k", "Let's boot up this old thing.",
+        "l", "Good old trusty Onyxhaven.",
+        "ll", "letsignorethattypo",
+        "m", "Huh.",
+        "n", "That lady's still warning people about grass?",
+        "o", "I eat grass all the time.",
+        "p", "Don't see why people like her are making such a big fuss about it.",
+        "q", "Anyway, I see a link right at the bottom for exactly what I need.",
+        "r", "Alright, Compass, what do you have for me?",
+        "s", "That's it? One highly ambiguous object that will solve all of my problems?",
+        "t", "...",
+        "u", "Well, I don't see anything wrong with that.",
+        "v", "I should head over to Amazing to see if I can get it right away.",
+        "w", "It's WHAT ASDFGHJKL-- ",
+        "x", "WHYDOESITCOSTSOMUCH",
+        "y", "And there's 14 PEOPLE --",
+        "z", "Okay, don't panic, me. This is what you've been training for your whole life.",
+        "aa", "CLICK UNTIL I GET IT");
+
+      function mouseReleased() {
+        if (counter < narration.length) {
+          document.getElementById("story").innerHTML = narration[counter];
+          counter += 1;
+        }
+        print('The value of counter is ' + counter);
+      }
+    </script>
+  <div>
+    <canvas id="testCanvas" width="300" height="300"></canvas>
+  </div>
+
+</body>
+
+
+</html>

@@ -1,0 +1,42 @@
+html, body {
+  margin: 3em auto;
+  padding: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 14px;
+  background-color: black;
+}
+
+#testCanvas {
+  display: block;
+}
+
+h1 {
+  font-size: 25px;
+  text-align: center;
+  padding-top: 40px;
+  color: white;
+}
+
+h2 {
+  font-size: 22px;
+  text-align: center;
+  color: white;
+}
+
+p {
+  padding-left: 30%;
+  padding-right: 30%;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+
+#testCanvas canvas {
+  display: block;
+  margin: auto;
+}
+
+a {
+  color: red;
+  margin: auto;
+}
